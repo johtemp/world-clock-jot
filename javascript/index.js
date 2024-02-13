@@ -1,4 +1,3 @@
-// setInterval(() => {
 //   let timeElement = document.querySelector(".time");
 //   let dateElement = document.querySelector(".date");
 
@@ -7,15 +6,9 @@
 
 //   let timeFormat = moment().format("h:mm:ss [<small>]A[</small>] ");
 //   timeElement.innerHTML = timeFormat;
-
-//   // Tokyo
-//   let tokyoTimeZone = moment().tz("Asia/Tokyo");
-//   let tokyoTime = document.querySelector(".tokyo .time");
-//   let tokyoDate = document.querySelector(".tokyo .date");
-
-//   tokyoDate.innerHTML = tokyoTimeZone.format("MMMM Do YYYY");
-//   tokyoTime.innerHTML = tokyoTimeZone.format("h:mm:ss [<small>]A[</small>] ");
 // }, 1000);
+
+// Tokyo
 
 //1. Create a variable to Select Element
 //2. Add a listener to change when selecting a city
@@ -24,6 +17,13 @@
 //5. Create variable for city name
 //6. Create variable for city Time
 //7. Create a variable for the div with formatting
+
+let tokyoTimeZone = moment().tz("Asia/Tokyo");
+let tokyoTime = document.querySelector(".tokyo .time");
+let tokyoDate = document.querySelector(".tokyo .date");
+
+tokyoDate.innerHTML = tokyoTimeZone.format("MMMM Do YYYY");
+tokyoTime.innerHTML = tokyoTimeZone.format("h:mm:ss [<small>]A[</small>] ");
 
 function updateCityTime(event) {
   let cityTimeZone = event.target.value;
@@ -41,6 +41,15 @@ function updateCityTime(event) {
             "h:mm:ss [<small>]A[</small>]"
           )}</div>
         </div>`;
+
+  //   clearInterval(currentInterval);
+  //   currentInterval = setInterval(
+  //     () =>
+  //       (cityElement.querySelector(".time").innerHTML = moment()
+  //         .tz(cityTimeZone)
+  //         .format("h:mm:ss [<small>]A[</small>]")),
+  //     1000
+  //   );
 }
 let citiesSelect = document.querySelector("#cities");
 citiesSelect.addEventListener("change", updateCityTime);

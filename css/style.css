@@ -31,9 +31,15 @@ h2 {
   justify-content: space-between;
   margin-top: 20px;
   padding-bottom: 20px;
-  border-bottom: dashed rgb(242, 238, 238);
 }
 
+.tokyo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: dashed rgb(242, 238, 238);
+}
 .time {
   font-size: 36px;
   font-weight: bold;
