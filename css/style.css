@@ -1,60 +1,65 @@
-h1 {
-  text-align: center;
+body {
+  background-color: #f9f7fe;
+  font-family: sans-serif;
 }
 
-body {
-  background-color: #f7f5fd;
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 36px;
 }
-.container {
-  display: block;
-  margin: 0 auto;
-  background-color: white;
-  max-width: 600px;
-  padding: 20px 20px 20px 20px;
-  border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
 }
 
 select {
   display: block;
-  margin: 0 auto;
   width: 100%;
-  padding: 5px;
-  font-size: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 10px;
 }
 
-h2 {
-  margin: 0 auto;
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
+
 .city {
   display: flex;
+  margin: 10px 0;
   justify-content: space-between;
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
-
-.tokyo {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: dashed rgb(242, 238, 238);
-}
-.time {
-  font-size: 36px;
-  font-weight: bold;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .city:last-child {
   border: none;
 }
 
-small {
-  font-size: 16px;
+.date {
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
 }
 
 footer {
   text-align: center;
-  font-size: 12px;
-  padding-top: 20px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
 }
