@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: rgb(238, 236, 247);
   font-family: sans-serif;
 }
 
@@ -24,11 +24,16 @@ select {
 
 .container {
   max-width: 600px;
+
   margin: 60px auto;
-  background: white;
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  background: radial-gradient(
+    circle,
+    rgb(243, 255, 255) 0%,
+    rgba(115, 170, 232, 0.689) 100%
+  );
 }
 
 .city {
@@ -61,5 +66,8 @@ select {
 footer {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+}
+
+.city:hover {
+  transform: scale(1.05);
 }
