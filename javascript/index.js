@@ -12,27 +12,29 @@ function updateTime() {
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  // tallinn
+  let tallinnElement = document.querySelector("#tallinn");
+  if (tallinnElement) {
+    let tallinnDateElement = tallinnElement.querySelector(".date");
+    let tallinnTimeElement = tallinnElement.querySelector(".time");
+    let tallinnTime = moment().tz("Europe/Tallinn");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    tallinnDateElement.innerHTML = tallinnTime.format("MMMM	Do YYYY");
+    tallinnTimeElement.innerHTML = tallinnTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  //Rome
-  let romeElement = document.querySelector("#rome");
-  if (romeElement) {
-    let romeDateElement = romeElement.querySelector(".date");
-    let romeTimeElement = romeElement.querySelector(".time");
-    let romeTime = moment().tz("Europe/Rome");
+  //Auckland
+  let aucklandElement = document.querySelector("#auckland");
+  if (aucklandElement) {
+    let aucklandDateElement = aucklandElement.querySelector(".date");
+    let aucklandTimeElement = aucklandElement.querySelector(".time");
+    let aucklandTime = moment().tz("Pacific/Auckland");
 
-    romeDateElement.innerHTML = romeTime.format("MMMM	Do YYYY");
-    romeTimeElement.innerHTML = romeTime.format("h:mm:ss [<small>]A[</small>]");
+    aucklandDateElement.innerHTML = aucklandTime.format("MMMM	Do YYYY");
+    aucklandTimeElement.innerHTML = aucklandTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
   //Manila
   let manilaElement = document.querySelector("#manila");
